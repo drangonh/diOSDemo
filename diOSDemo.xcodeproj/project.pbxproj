@@ -25,6 +25,7 @@
 		755F702422F3DA6F001734EF /* SingleTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 755F701722F3DA6E001734EF /* SingleTwo.m */; };
 		755F702522F3DA6F001734EF /* SingleOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 755F701822F3DA6E001734EF /* SingleOne.m */; };
 		755F702622F3DA6F001734EF /* NSUserTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 755F701A22F3DA6F001734EF /* NSUserTwo.m */; };
+		755F702822F41438001734EF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 755F702722F41437001734EF /* README.md */; };
 		75D4B14B22F2819E00C86113 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D4B14A22F2819E00C86113 /* NextViewController.m */; };
 		75D4B15022F2930100C86113 /* Instance.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D4B14F22F2930100C86113 /* Instance.m */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		755F701A22F3DA6F001734EF /* NSUserTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSUserTwo.m; sourceTree = "<group>"; };
 		755F701B22F3DA6F001734EF /* SingleTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleTwo.h; sourceTree = "<group>"; };
 		755F701C22F3DA6F001734EF /* DelegateOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateOne.h; sourceTree = "<group>"; };
+		755F702722F41437001734EF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		75D4B14922F2819E00C86113 /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		75D4B14A22F2819E00C86113 /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		75D4B14E22F2930100C86113 /* Instance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Instance.h; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		752274E422F19D4600AE6870 /* supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				755F702722F41437001734EF /* README.md */,
 				752274D022F1973F00AE6870 /* Assets.xcassets */,
 				752274D222F1973F00AE6870 /* LaunchScreen.storyboard */,
 				752274D522F1973F00AE6870 /* Info.plist */,
@@ -256,6 +259,7 @@
 			files = (
 				752274D422F1973F00AE6870 /* LaunchScreen.storyboard in Resources */,
 				752274E322F19D1400AE6870 /* Default-568h@2x.png in Resources */,
+				755F702822F41438001734EF /* README.md in Resources */,
 				752274D122F1973F00AE6870 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
