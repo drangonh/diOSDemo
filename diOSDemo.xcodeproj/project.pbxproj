@@ -13,6 +13,20 @@
 		752274D422F1973F00AE6870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 752274D222F1973F00AE6870 /* LaunchScreen.storyboard */; };
 		752274D722F1973F00AE6870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 752274D622F1973F00AE6870 /* main.m */; };
 		752274E322F19D1400AE6870 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 752274E222F19D1400AE6870 /* Default-568h@2x.png */; };
+		755F700522F3D6EE001734EF /* AttibuteOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 755F700422F3D6EE001734EF /* AttibuteOne.m */; };
+		755F700822F3D70C001734EF /* AttributeTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 755F700722F3D70C001734EF /* AttributeTwo.m */; };
+		755F701D22F3DA6F001734EF /* NSUserOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 755F700E22F3DA6E001734EF /* NSUserOne.m */; };
+		755F701E22F3DA6F001734EF /* DelegateTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 755F701022F3DA6E001734EF /* DelegateTwo.m */; };
+		755F701F22F3DA6F001734EF /* ObserverOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 755F701122F3DA6E001734EF /* ObserverOne.m */; };
+		755F702022F3DA6F001734EF /* BlockOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 755F701222F3DA6E001734EF /* BlockOne.m */; };
+		755F702122F3DA6F001734EF /* ObserverTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 755F701322F3DA6E001734EF /* ObserverTwo.m */; };
+		755F702222F3DA6F001734EF /* BlockTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 755F701522F3DA6E001734EF /* BlockTwo.m */; };
+		755F702322F3DA6F001734EF /* DelegateOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 755F701622F3DA6E001734EF /* DelegateOne.m */; };
+		755F702422F3DA6F001734EF /* SingleTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 755F701722F3DA6E001734EF /* SingleTwo.m */; };
+		755F702522F3DA6F001734EF /* SingleOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 755F701822F3DA6E001734EF /* SingleOne.m */; };
+		755F702622F3DA6F001734EF /* NSUserTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 755F701A22F3DA6F001734EF /* NSUserTwo.m */; };
+		75D4B14B22F2819E00C86113 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D4B14A22F2819E00C86113 /* NextViewController.m */; };
+		75D4B15022F2930100C86113 /* Instance.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D4B14F22F2930100C86113 /* Instance.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +40,34 @@
 		752274D522F1973F00AE6870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		752274D622F1973F00AE6870 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		752274E222F19D1400AE6870 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		755F700322F3D6EE001734EF /* AttibuteOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttibuteOne.h; sourceTree = "<group>"; };
+		755F700422F3D6EE001734EF /* AttibuteOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttibuteOne.m; sourceTree = "<group>"; };
+		755F700622F3D70C001734EF /* AttributeTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributeTwo.h; sourceTree = "<group>"; };
+		755F700722F3D70C001734EF /* AttributeTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributeTwo.m; sourceTree = "<group>"; };
+		755F700922F3DA6E001734EF /* BlockTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTwo.h; sourceTree = "<group>"; };
+		755F700A22F3DA6E001734EF /* ObserverTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObserverTwo.h; sourceTree = "<group>"; };
+		755F700B22F3DA6E001734EF /* SingleOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleOne.h; sourceTree = "<group>"; };
+		755F700C22F3DA6E001734EF /* NSUserOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSUserOne.h; sourceTree = "<group>"; };
+		755F700D22F3DA6E001734EF /* DelegateTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateTwo.h; sourceTree = "<group>"; };
+		755F700E22F3DA6E001734EF /* NSUserOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSUserOne.m; sourceTree = "<group>"; };
+		755F700F22F3DA6E001734EF /* BlockOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockOne.h; sourceTree = "<group>"; };
+		755F701022F3DA6E001734EF /* DelegateTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateTwo.m; sourceTree = "<group>"; };
+		755F701122F3DA6E001734EF /* ObserverOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObserverOne.m; sourceTree = "<group>"; };
+		755F701222F3DA6E001734EF /* BlockOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockOne.m; sourceTree = "<group>"; };
+		755F701322F3DA6E001734EF /* ObserverTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObserverTwo.m; sourceTree = "<group>"; };
+		755F701422F3DA6E001734EF /* NSUserTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSUserTwo.h; sourceTree = "<group>"; };
+		755F701522F3DA6E001734EF /* BlockTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockTwo.m; sourceTree = "<group>"; };
+		755F701622F3DA6E001734EF /* DelegateOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateOne.m; sourceTree = "<group>"; };
+		755F701722F3DA6E001734EF /* SingleTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleTwo.m; sourceTree = "<group>"; };
+		755F701822F3DA6E001734EF /* SingleOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleOne.m; sourceTree = "<group>"; };
+		755F701922F3DA6F001734EF /* ObserverOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObserverOne.h; sourceTree = "<group>"; };
+		755F701A22F3DA6F001734EF /* NSUserTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSUserTwo.m; sourceTree = "<group>"; };
+		755F701B22F3DA6F001734EF /* SingleTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleTwo.h; sourceTree = "<group>"; };
+		755F701C22F3DA6F001734EF /* DelegateOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateOne.h; sourceTree = "<group>"; };
+		75D4B14922F2819E00C86113 /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		75D4B14A22F2819E00C86113 /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		75D4B14E22F2930100C86113 /* Instance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Instance.h; sourceTree = "<group>"; };
+		75D4B14F22F2930100C86113 /* Instance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Instance.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +101,7 @@
 		752274C622F1973C00AE6870 /* diOSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				75D4B14C22F292D000C86113 /* Utils */,
 				752274E522F1A19500AE6870 /* View */,
 				752274E422F19D4600AE6870 /* supporting Files */,
 				752274DF22F19C4B00AE6870 /* Main */,
@@ -89,10 +132,69 @@
 		752274E522F1A19500AE6870 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				752274CA22F1973C00AE6870 /* ViewController.h */,
-				752274CB22F1973C00AE6870 /* ViewController.m */,
+				75D4B14822F2816A00C86113 /* Practice */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		755F700222F3D6A3001734EF /* PassValue */ = {
+			isa = PBXGroup;
+			children = (
+				755F700F22F3DA6E001734EF /* BlockOne.h */,
+				755F701222F3DA6E001734EF /* BlockOne.m */,
+				755F700922F3DA6E001734EF /* BlockTwo.h */,
+				755F701522F3DA6E001734EF /* BlockTwo.m */,
+				755F701C22F3DA6F001734EF /* DelegateOne.h */,
+				755F701622F3DA6E001734EF /* DelegateOne.m */,
+				755F700D22F3DA6E001734EF /* DelegateTwo.h */,
+				755F701022F3DA6E001734EF /* DelegateTwo.m */,
+				755F700C22F3DA6E001734EF /* NSUserOne.h */,
+				755F700E22F3DA6E001734EF /* NSUserOne.m */,
+				755F701422F3DA6E001734EF /* NSUserTwo.h */,
+				755F701A22F3DA6F001734EF /* NSUserTwo.m */,
+				755F701922F3DA6F001734EF /* ObserverOne.h */,
+				755F701122F3DA6E001734EF /* ObserverOne.m */,
+				755F700A22F3DA6E001734EF /* ObserverTwo.h */,
+				755F701322F3DA6E001734EF /* ObserverTwo.m */,
+				755F700B22F3DA6E001734EF /* SingleOne.h */,
+				755F701822F3DA6E001734EF /* SingleOne.m */,
+				755F701B22F3DA6F001734EF /* SingleTwo.h */,
+				755F701722F3DA6E001734EF /* SingleTwo.m */,
+				755F700322F3D6EE001734EF /* AttibuteOne.h */,
+				755F700422F3D6EE001734EF /* AttibuteOne.m */,
+				755F700622F3D70C001734EF /* AttributeTwo.h */,
+				755F700722F3D70C001734EF /* AttributeTwo.m */,
+			);
+			path = PassValue;
+			sourceTree = "<group>";
+		};
+		75D4B14822F2816A00C86113 /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				755F700222F3D6A3001734EF /* PassValue */,
+				752274CA22F1973C00AE6870 /* ViewController.h */,
+				752274CB22F1973C00AE6870 /* ViewController.m */,
+				75D4B14922F2819E00C86113 /* NextViewController.h */,
+				75D4B14A22F2819E00C86113 /* NextViewController.m */,
+			);
+			path = Practice;
+			sourceTree = "<group>";
+		};
+		75D4B14C22F292D000C86113 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				75D4B14D22F292DC00C86113 /* Single */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		75D4B14D22F292DC00C86113 /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				75D4B14E22F2930100C86113 /* Instance.h */,
+				75D4B14F22F2930100C86113 /* Instance.m */,
+			);
+			path = Single;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,8 +267,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				755F701D22F3DA6F001734EF /* NSUserOne.m in Sources */,
+				755F702222F3DA6F001734EF /* BlockTwo.m in Sources */,
+				755F701E22F3DA6F001734EF /* DelegateTwo.m in Sources */,
+				755F702422F3DA6F001734EF /* SingleTwo.m in Sources */,
+				755F702622F3DA6F001734EF /* NSUserTwo.m in Sources */,
 				752274CC22F1973C00AE6870 /* ViewController.m in Sources */,
+				75D4B14B22F2819E00C86113 /* NextViewController.m in Sources */,
+				755F700822F3D70C001734EF /* AttributeTwo.m in Sources */,
+				75D4B15022F2930100C86113 /* Instance.m in Sources */,
+				755F702322F3DA6F001734EF /* DelegateOne.m in Sources */,
+				755F702022F3DA6F001734EF /* BlockOne.m in Sources */,
+				755F702522F3DA6F001734EF /* SingleOne.m in Sources */,
+				755F701F22F3DA6F001734EF /* ObserverOne.m in Sources */,
 				752274D722F1973F00AE6870 /* main.m in Sources */,
+				755F700522F3D6EE001734EF /* AttibuteOne.m in Sources */,
+				755F702122F3DA6F001734EF /* ObserverTwo.m in Sources */,
 				752274C922F1973C00AE6870 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
