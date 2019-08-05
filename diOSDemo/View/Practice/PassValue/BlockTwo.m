@@ -48,8 +48,8 @@
 }
 
 #pragma block
-//- (void)testBlockFunc:(test)block{
+- (void)testBlockFunc:(test)block{
 //    block(@"11",self.field.text);
-//}
+}
 
 @end

@@ -28,6 +28,7 @@
 		755F702822F41438001734EF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 755F702722F41437001734EF /* README.md */; };
 		75D4B14B22F2819E00C86113 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D4B14A22F2819E00C86113 /* NextViewController.m */; };
 		75D4B15022F2930100C86113 /* Instance.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D4B14F22F2930100C86113 /* Instance.m */; };
+		75ED264022F7FBE800872E47 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ED263F22F7FBE800872E47 /* ImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,8 @@
 		75D4B14A22F2819E00C86113 /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		75D4B14E22F2930100C86113 /* Instance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Instance.h; sourceTree = "<group>"; };
 		75D4B14F22F2930100C86113 /* Instance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Instance.m; sourceTree = "<group>"; };
+		75ED263E22F7FBE800872E47 /* ImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		75ED263F22F7FBE800872E47 /* ImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,7 @@
 		75D4B14822F2816A00C86113 /* Practice */ = {
 			isa = PBXGroup;
 			children = (
+				75ED263C22F7FB0B00872E47 /* Media */,
 				755F700222F3D6A3001734EF /* PassValue */,
 				752274CA22F1973C00AE6870 /* ViewController.h */,
 				752274CB22F1973C00AE6870 /* ViewController.m */,
@@ -198,6 +202,23 @@
 				75D4B14F22F2930100C86113 /* Instance.m */,
 			);
 			path = Single;
+			sourceTree = "<group>";
+		};
+		75ED263C22F7FB0B00872E47 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				75ED263D22F7FBA900872E47 /* ImagePickerDemo */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		75ED263D22F7FBA900872E47 /* ImagePickerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				75ED263E22F7FBE800872E47 /* ImageViewController.h */,
+				75ED263F22F7FBE800872E47 /* ImageViewController.m */,
+			);
+			path = ImagePickerDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +298,7 @@
 				755F702422F3DA6F001734EF /* SingleTwo.m in Sources */,
 				755F702622F3DA6F001734EF /* NSUserTwo.m in Sources */,
 				752274CC22F1973C00AE6870 /* ViewController.m in Sources */,
+				75ED264022F7FBE800872E47 /* ImageViewController.m in Sources */,
 				75D4B14B22F2819E00C86113 /* NextViewController.m in Sources */,
 				755F700822F3D70C001734EF /* AttributeTwo.m in Sources */,
 				75D4B15022F2930100C86113 /* Instance.m in Sources */,
@@ -431,6 +453,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.target.dragonh.diOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -448,6 +471,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.target.dragonh.diOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};
