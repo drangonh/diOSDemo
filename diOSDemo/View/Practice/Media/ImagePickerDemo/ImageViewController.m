@@ -28,7 +28,7 @@
         _imagePicker = [[UIImagePickerController alloc] init];
         
         //设置类型
-        _imagePicker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+        _imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         
         //设置媒体类型
         _imagePicker.mediaTypes = [NSArray arrayWithObject:(__bridge NSString *)kUTTypeImage];
@@ -44,6 +44,7 @@
         _btn = [[UIButton alloc] initWithFrame:CGRectMake(50, 114, 300, 50)];
         _btn.backgroundColor = [UIColor yellowColor];
         [_btn setTitle:@"选择图片" forState:UIControlStateNormal];
+        _btn.layer.cornerRadius = 25;
         [_btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_btn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
     }

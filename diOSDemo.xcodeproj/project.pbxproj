@@ -26,6 +26,8 @@
 		755F702522F3DA6F001734EF /* SingleOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 755F701822F3DA6E001734EF /* SingleOne.m */; };
 		755F702622F3DA6F001734EF /* NSUserTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 755F701A22F3DA6F001734EF /* NSUserTwo.m */; };
 		755F702822F41438001734EF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 755F702722F41437001734EF /* README.md */; };
+		75B324F822F9147E00CC6977 /* AudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B324F722F9147E00CC6977 /* AudioViewController.m */; };
+		75B324FA22F95D8900CC6977 /* 蓝莲花.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B324F922F95D8900CC6977 /* 蓝莲花.mp3 */; };
 		75D4B14B22F2819E00C86113 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D4B14A22F2819E00C86113 /* NextViewController.m */; };
 		75D4B15022F2930100C86113 /* Instance.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D4B14F22F2930100C86113 /* Instance.m */; };
 		75ED264022F7FBE800872E47 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ED263F22F7FBE800872E47 /* ImageViewController.m */; };
@@ -67,6 +69,9 @@
 		755F701B22F3DA6F001734EF /* SingleTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleTwo.h; sourceTree = "<group>"; };
 		755F701C22F3DA6F001734EF /* DelegateOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateOne.h; sourceTree = "<group>"; };
 		755F702722F41437001734EF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		75B324F622F9147E00CC6977 /* AudioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioViewController.h; sourceTree = "<group>"; };
+		75B324F722F9147E00CC6977 /* AudioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioViewController.m; sourceTree = "<group>"; };
+		75B324F922F95D8900CC6977 /* 蓝莲花.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "蓝莲花.mp3"; sourceTree = "<group>"; };
 		75D4B14922F2819E00C86113 /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		75D4B14A22F2819E00C86113 /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		75D4B14E22F2930100C86113 /* Instance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Instance.h; sourceTree = "<group>"; };
@@ -89,6 +94,7 @@
 		752274BB22F1973C00AE6870 = {
 			isa = PBXGroup;
 			children = (
+				75B324F922F95D8900CC6977 /* 蓝莲花.mp3 */,
 				752274E222F19D1400AE6870 /* Default-568h@2x.png */,
 				752274C622F1973C00AE6870 /* diOSDemo */,
 				752274C522F1973C00AE6870 /* Products */,
@@ -174,6 +180,15 @@
 			path = PassValue;
 			sourceTree = "<group>";
 		};
+		75B324F522F9146600CC6977 /* AudioDemo */ = {
+			isa = PBXGroup;
+			children = (
+				75B324F622F9147E00CC6977 /* AudioViewController.h */,
+				75B324F722F9147E00CC6977 /* AudioViewController.m */,
+			);
+			path = AudioDemo;
+			sourceTree = "<group>";
+		};
 		75D4B14822F2816A00C86113 /* Practice */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +222,7 @@
 		75ED263C22F7FB0B00872E47 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				75B324F522F9146600CC6977 /* AudioDemo */,
 				75ED263D22F7FBA900872E47 /* ImagePickerDemo */,
 			);
 			path = Media;
@@ -281,6 +297,7 @@
 				752274D422F1973F00AE6870 /* LaunchScreen.storyboard in Resources */,
 				752274E322F19D1400AE6870 /* Default-568h@2x.png in Resources */,
 				755F702822F41438001734EF /* README.md in Resources */,
+				75B324FA22F95D8900CC6977 /* 蓝莲花.mp3 in Resources */,
 				752274D122F1973F00AE6870 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +322,7 @@
 				755F702322F3DA6F001734EF /* DelegateOne.m in Sources */,
 				755F702022F3DA6F001734EF /* BlockOne.m in Sources */,
 				755F702522F3DA6F001734EF /* SingleOne.m in Sources */,
+				75B324F822F9147E00CC6977 /* AudioViewController.m in Sources */,
 				755F701F22F3DA6F001734EF /* ObserverOne.m in Sources */,
 				752274D722F1973F00AE6870 /* main.m in Sources */,
 				755F700522F3D6EE001734EF /* AttibuteOne.m in Sources */,

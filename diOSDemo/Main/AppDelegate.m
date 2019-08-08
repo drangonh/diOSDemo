@@ -15,6 +15,7 @@
 #import "BlockOne.h"
 #import "ObserverOne.h"
 #import "ImageViewController.h"
+#import "AudioViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -24,14 +25,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    //传值
 //    AttibuteOne *rootView = [[AttibuteOne alloc] init];
 //    SingleOne *rootView = [[SingleOne alloc] init];
 //    NSUserOne *rootView = [[NSUserOne alloc] init];
 //    DelegateOne *rootView = [[DelegateOne alloc] init];
 //    BlockOne *rootView = [[BlockOne alloc] init];
 //    ObserverOne *rootView = [[ObserverOne alloc] init];
-    ImageViewController *rootView = [[ImageViewController alloc] init];
     
+    //多媒体入口
+//    ImageViewController *rootView = [[ImageViewController alloc] init];
+    AudioViewController *rootView = [[AudioViewController alloc] init];
     UINavigationController *navigator = [[UINavigationController alloc] initWithRootViewController:rootView];
     navigator.title = @"测试";
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
