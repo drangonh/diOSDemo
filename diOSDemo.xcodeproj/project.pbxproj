@@ -28,6 +28,8 @@
 		755F702822F41438001734EF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 755F702722F41437001734EF /* README.md */; };
 		75B324F822F9147E00CC6977 /* AudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B324F722F9147E00CC6977 /* AudioViewController.m */; };
 		75B324FA22F95D8900CC6977 /* 蓝莲花.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B324F922F95D8900CC6977 /* 蓝莲花.mp3 */; };
+		75C158A122FBC69B00DBFA6D /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C158A022FBC69B00DBFA6D /* VideoViewController.m */; };
+		75D46F3922FD4A710072E484 /* SCRFTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D46F3722FD4A710072E484 /* SCRFTPRequest.m */; };
 		75D4B14B22F2819E00C86113 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D4B14A22F2819E00C86113 /* NextViewController.m */; };
 		75D4B15022F2930100C86113 /* Instance.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D4B14F22F2930100C86113 /* Instance.m */; };
 		75ED264022F7FBE800872E47 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75ED263F22F7FBE800872E47 /* ImageViewController.m */; };
@@ -72,6 +74,10 @@
 		75B324F622F9147E00CC6977 /* AudioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioViewController.h; sourceTree = "<group>"; };
 		75B324F722F9147E00CC6977 /* AudioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioViewController.m; sourceTree = "<group>"; };
 		75B324F922F95D8900CC6977 /* 蓝莲花.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "蓝莲花.mp3"; sourceTree = "<group>"; };
+		75C1589F22FBC69B00DBFA6D /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		75C158A022FBC69B00DBFA6D /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		75D46F3722FD4A710072E484 /* SCRFTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRFTPRequest.m; sourceTree = "<group>"; };
+		75D46F3822FD4A710072E484 /* SCRFTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRFTPRequest.h; sourceTree = "<group>"; };
 		75D4B14922F2819E00C86113 /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		75D4B14A22F2819E00C86113 /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		75D4B14E22F2930100C86113 /* Instance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Instance.h; sourceTree = "<group>"; };
@@ -189,6 +195,24 @@
 			path = AudioDemo;
 			sourceTree = "<group>";
 		};
+		75C1589E22FBC68300DBFA6D /* VideoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				75C1589F22FBC69B00DBFA6D /* VideoViewController.h */,
+				75C158A022FBC69B00DBFA6D /* VideoViewController.m */,
+			);
+			path = VideoDemo;
+			sourceTree = "<group>";
+		};
+		75D46F3622FD4A600072E484 /* FTP */ = {
+			isa = PBXGroup;
+			children = (
+				75D46F3822FD4A710072E484 /* SCRFTPRequest.h */,
+				75D46F3722FD4A710072E484 /* SCRFTPRequest.m */,
+			);
+			path = FTP;
+			sourceTree = "<group>";
+		};
 		75D4B14822F2816A00C86113 /* Practice */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +229,7 @@
 		75D4B14C22F292D000C86113 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				75D46F3622FD4A600072E484 /* FTP */,
 				75D4B14D22F292DC00C86113 /* Single */,
 			);
 			path = Utils;
@@ -222,6 +247,7 @@
 		75ED263C22F7FB0B00872E47 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				75C1589E22FBC68300DBFA6D /* VideoDemo */,
 				75B324F522F9146600CC6977 /* AudioDemo */,
 				75ED263D22F7FBA900872E47 /* ImagePickerDemo */,
 			);
@@ -315,10 +341,12 @@
 				755F702422F3DA6F001734EF /* SingleTwo.m in Sources */,
 				755F702622F3DA6F001734EF /* NSUserTwo.m in Sources */,
 				752274CC22F1973C00AE6870 /* ViewController.m in Sources */,
+				75D46F3922FD4A710072E484 /* SCRFTPRequest.m in Sources */,
 				75ED264022F7FBE800872E47 /* ImageViewController.m in Sources */,
 				75D4B14B22F2819E00C86113 /* NextViewController.m in Sources */,
 				755F700822F3D70C001734EF /* AttributeTwo.m in Sources */,
 				75D4B15022F2930100C86113 /* Instance.m in Sources */,
+				75C158A122FBC69B00DBFA6D /* VideoViewController.m in Sources */,
 				755F702322F3DA6F001734EF /* DelegateOne.m in Sources */,
 				755F702022F3DA6F001734EF /* BlockOne.m in Sources */,
 				755F702522F3DA6F001734EF /* SingleOne.m in Sources */,

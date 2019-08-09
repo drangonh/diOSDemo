@@ -16,6 +16,7 @@
 #import "ObserverOne.h"
 #import "ImageViewController.h"
 #import "AudioViewController.h"
+#import "VideoViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -34,8 +35,9 @@
 //    ObserverOne *rootView = [[ObserverOne alloc] init];
     
     //多媒体入口
-//    ImageViewController *rootView = [[ImageViewController alloc] init];
-    AudioViewController *rootView = [[AudioViewController alloc] init];
+    ImageViewController *rootView = [[ImageViewController alloc] init];
+//    AudioViewController *rootView = [[AudioViewController alloc] init];
+//    VideoViewController *rootView = [[VideoViewController alloc] init];
     UINavigationController *navigator = [[UINavigationController alloc] initWithRootViewController:rootView];
     navigator.title = @"测试";
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
