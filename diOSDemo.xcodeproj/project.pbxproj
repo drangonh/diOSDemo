@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04533E3A27B9F95200726307 /* Type_Study.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533E3827B9F95200726307 /* Type_Study.m */; };
 		752274C922F1973C00AE6870 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 752274C822F1973C00AE6870 /* AppDelegate.m */; };
 		752274CC22F1973C00AE6870 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 752274CB22F1973C00AE6870 /* ViewController.m */; };
 		752274D122F1973F00AE6870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752274D022F1973F00AE6870 /* Assets.xcassets */; };
@@ -36,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04533E3827B9F95200726307 /* Type_Study.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Type_Study.m; sourceTree = "<group>"; };
+		04533E3927B9F95200726307 /* Type_Study.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Type_Study.h; sourceTree = "<group>"; };
 		752274C422F1973C00AE6870 /* diOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		752274C722F1973C00AE6870 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		752274C822F1973C00AE6870 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -97,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04533E3727B9F95200726307 /* Grammer */ = {
+			isa = PBXGroup;
+			children = (
+				04533E3927B9F95200726307 /* Type_Study.h */,
+				04533E3827B9F95200726307 /* Type_Study.m */,
+			);
+			path = Grammer;
+			sourceTree = "<group>";
+		};
 		752274BB22F1973C00AE6870 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +130,7 @@
 		752274C622F1973C00AE6870 /* diOSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04533E3727B9F95200726307 /* Grammer */,
 				75D4B14C22F292D000C86113 /* Utils */,
 				752274E522F1A19500AE6870 /* View */,
 				752274E422F19D4600AE6870 /* supporting Files */,
@@ -348,6 +361,7 @@
 				75D4B15022F2930100C86113 /* Instance.m in Sources */,
 				75C158A122FBC69B00DBFA6D /* VideoViewController.m in Sources */,
 				755F702322F3DA6F001734EF /* DelegateOne.m in Sources */,
+				04533E3A27B9F95200726307 /* Type_Study.m in Sources */,
 				755F702022F3DA6F001734EF /* BlockOne.m in Sources */,
 				755F702522F3DA6F001734EF /* SingleOne.m in Sources */,
 				75B324F822F9147E00CC6977 /* AudioViewController.m in Sources */,
