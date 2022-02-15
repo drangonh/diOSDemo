@@ -16,6 +16,7 @@ void typeTest(){
     arrTest();
     arrTestNew();
     mutableArr();
+    dictionaryTest();
 }
 
 
@@ -98,6 +99,74 @@ void mutableArr(){
     [mutableArr insertObject:@"ios" atIndex:1];
 
     NSLog(@"mutableArr = %@",mutableArr);
+    
+    // 初始化作为列的数组，看做4列
+    NSMutableArray *columnArray = [[NSMutableArray alloc]initWithCapacity:4];
+
+    // 初始化2个一维数组，每个一维数组有4个元素，看做1行4列，2行加起来就是2行4列
+    NSMutableArray *rowArray1 = [[NSMutableArray alloc]initWithCapacity:4];
+    NSMutableArray *rowArray2 = [[NSMutableArray alloc]initWithCapacity:4];
+
+    // 每个行依次增加数组元素
+    // 第一行
+    [rowArray1 addObject:@"11"];
+    [rowArray1 addObject:@"12"];
+    [rowArray1 addObject:@"13"];
+    [rowArray1 addObject:@"14"];
+
+    // 第二行
+    [rowArray2 addObject:@"21"];
+    [rowArray2 addObject:@"22"];
+    [rowArray2 addObject:@"23"];
+    [rowArray2 addObject:@"24"];
+
+    // 分别打印数组
+    NSLog(@"myRowArray1: %@", rowArray1);
+    NSLog(@"myRowArray2: %@", rowArray2);
+    NSLog(@"myColumnArray: %@", columnArray);
+
+    [columnArray insertObject:rowArray1 atIndex:0];
+    [columnArray removeObject:rowArray1];
+    NSLog(@"myColumnArray: %@", columnArray);
 }
 
+/**
+ NSDictionary
+ 主要特点是不可变，如果集合初始化完成，将内容无法修改，无序。
+ */
+void dictionaryTest(){
+    //标准创建
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"cat",@"name1",@"dog",@"name2", nil];
+    //字面量创建
+    NSDictionary *dict1 = @{@"name1":@"cat",@"name2":@"dog"};
+    //第一种遍历
+    for (NSString *key in [dict1 allKeys]) {
+        NSLog(@"key: %@,value: %@", key, dict1[key]);
+    }
+    //第二种遍历方式，通过遍历器
+    NSEnumerator *rator = [dict keyEnumerator];
+    NSString *temp;
+    while (temp = [rator nextObject]) {
+        NSLog(@"%@", temp);
+    }
+    //获取元素
+    id name = dict1[@"name"];
+    [dict1 objectForKey:@"name"];
+    //集合元素的个数
+    NSInteger count = dict1.count;
+    
+    // 创建路径方法两个:
+    // NSString *documents = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+    //拼接文件绝对路径
+    // NSString *path = [documents stringByAppendingPathComponent:@"header.png"];
+    
+    // 创建一个路径
+    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *path = [docPath stringByAppendingFormat:@"dictionary.txt"];
+    //沙盒文件存储和读取Plist
+    [dict writeToFile:path atomically:YES];
+    NSDictionary *dict7 = [NSDictionary dictionaryWithContentsOfFile:path];
+
+    NSLog(@"name = %@,count = %li, dict7 = %@",name,count,dict7);
+}
 @end
