@@ -14,6 +14,8 @@ void typeTest(){
     stringTest();
     mutableString();
     arrTest();
+    arrTestNew();
+    mutableArr();
 }
 
 
@@ -68,6 +70,34 @@ void arrTest(){
         NSString *_str = [array objectAtIndex:i];
         NSLog(@"%@",_str);
     }
+}
+
+void arrTestNew(){
+    // 字面量创建二维数组并访问
+    NSArray *arr2 = @[@[@11, @12, @13], @[@21, @22, @23], @[@31, @32, @33]];
+    
+    // 获取数组值的两种方法
+    // 字面量访问方式(推荐)
+    NSLog(@"arr2[2][2]:%@", arr2[2][2]);
+    // 数组对象函数访问
+    NSLog(@"arr2[2][2]:%@", [[arr2 objectAtIndex:2] objectAtIndex:2]);
+
+}
+
+void mutableArr(){
+    //创建，当然还有其他方式
+    NSMutableArray *mutableArr = [NSMutableArray arrayWithObjects:@"one",@"two",@"three", nil];
+    //添加
+    [mutableArr addObject:@"hello"];
+    //替换
+    [mutableArr replaceObjectAtIndex:2 withObject:@"tihuan"];
+    //删除
+    [mutableArr removeObjectAtIndex:1];
+    
+    //插入,在数组下标为1的位置插入,并且将后面的元素后移
+    [mutableArr insertObject:@"ios" atIndex:1];
+
+    NSLog(@"mutableArr = %@",mutableArr);
 }
 
 @end
