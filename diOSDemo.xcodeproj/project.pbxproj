@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		04533E3A27B9F95200726307 /* Type_Study.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533E3827B9F95200726307 /* Type_Study.m */; };
+		04533E3D27C3390300726307 /* Class_Study.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533E3C27C3390300726307 /* Class_Study.m */; };
+		04533E4027C4822E00726307 /* Grammer_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 04533E3F27C4822E00726307 /* Grammer_Test.m */; };
 		752274C922F1973C00AE6870 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 752274C822F1973C00AE6870 /* AppDelegate.m */; };
 		752274CC22F1973C00AE6870 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 752274CB22F1973C00AE6870 /* ViewController.m */; };
 		752274D122F1973F00AE6870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752274D022F1973F00AE6870 /* Assets.xcassets */; };
@@ -39,6 +41,10 @@
 /* Begin PBXFileReference section */
 		04533E3827B9F95200726307 /* Type_Study.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Type_Study.m; sourceTree = "<group>"; };
 		04533E3927B9F95200726307 /* Type_Study.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Type_Study.h; sourceTree = "<group>"; };
+		04533E3B27C3390300726307 /* Class_Study.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class_Study.h; sourceTree = "<group>"; };
+		04533E3C27C3390300726307 /* Class_Study.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class_Study.m; sourceTree = "<group>"; };
+		04533E3E27C4822E00726307 /* Grammer_Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Grammer_Test.h; sourceTree = "<group>"; };
+		04533E3F27C4822E00726307 /* Grammer_Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Grammer_Test.m; sourceTree = "<group>"; };
 		752274C422F1973C00AE6870 /* diOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		752274C722F1973C00AE6870 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		752274C822F1973C00AE6870 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,6 +111,10 @@
 			children = (
 				04533E3927B9F95200726307 /* Type_Study.h */,
 				04533E3827B9F95200726307 /* Type_Study.m */,
+				04533E3B27C3390300726307 /* Class_Study.h */,
+				04533E3C27C3390300726307 /* Class_Study.m */,
+				04533E3E27C4822E00726307 /* Grammer_Test.h */,
+				04533E3F27C4822E00726307 /* Grammer_Test.m */,
 			);
 			path = Grammer;
 			sourceTree = "<group>";
@@ -359,12 +369,14 @@
 				75D4B14B22F2819E00C86113 /* NextViewController.m in Sources */,
 				755F700822F3D70C001734EF /* AttributeTwo.m in Sources */,
 				75D4B15022F2930100C86113 /* Instance.m in Sources */,
+				04533E4027C4822E00726307 /* Grammer_Test.m in Sources */,
 				75C158A122FBC69B00DBFA6D /* VideoViewController.m in Sources */,
 				755F702322F3DA6F001734EF /* DelegateOne.m in Sources */,
 				04533E3A27B9F95200726307 /* Type_Study.m in Sources */,
 				755F702022F3DA6F001734EF /* BlockOne.m in Sources */,
 				755F702522F3DA6F001734EF /* SingleOne.m in Sources */,
 				75B324F822F9147E00CC6977 /* AudioViewController.m in Sources */,
+				04533E3D27C3390300726307 /* Class_Study.m in Sources */,
 				755F701F22F3DA6F001734EF /* ObserverOne.m in Sources */,
 				752274D722F1973F00AE6870 /* main.m in Sources */,
 				755F700522F3D6EE001734EF /* AttibuteOne.m in Sources */,

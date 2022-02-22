@@ -1,8 +1,8 @@
 //
-//  Type_Study.h
+//  Grammer_Test.h
 //  diOSDemo
 //
-//  Created by mac on 2022/2/14.
+//  Created by mac on 2022/2/22.
 //  Copyright © 2022 hl. All rights reserved.
 //
 
@@ -10,9 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Type_Study : NSObject
+@interface Grammer_Test : NSObject
 
-- (void)typeTest;
+- (void)grammerTest;
 
 @end
 

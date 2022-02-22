@@ -10,20 +10,28 @@
 
 @implementation Type_Study
 
-void typeTest(){
-    stringTest();
-    mutableString();
-    arrTest();
-    arrTestNew();
-    mutableArr();
-    dictionaryTest();
+- (void)typeTest{
+    [self stringTest];
+    [self mutableString];
+    
+    [self arrTest];
+    [self arrTestNew];
+    [self mutableArr];
+    
+    [self dictionaryTest];
+    [self MutableDictionaryTest];
+    
+    [self MutableSetTest];
+    [self NSSetTest];
+    
+    
 }
 
 
 // OC中基本数据类型:int、float、double、char(字符型)
 // 字符串是对象
 // 当需要使用int类型的变量时，推荐使用NSInteger，这样不需要考虑设备是32位或者64位。
-void stringTest(){
+- (void)stringTest{
     NSString *string1 = @"Hello world";
     // 创建空字符串
     NSString *string2 = [NSString string];
@@ -34,7 +42,7 @@ void stringTest(){
     // 参考链接:https://blog.csdn.net/zilan1239/article/details/29610337
 }
 
-void mutableString(){
+- (void)mutableString{
     //创建对象并初始化
     NSMutableString *mStr = [[NSMutableString alloc]init];
     //appendstring：向字符串尾部添加一个字符串。
@@ -49,7 +57,7 @@ void mutableString(){
     NSLog(@"字符串插入%@", mStr);
 }
 
-void arrTest(){
+- (void)arrTest{
     //字面量创建方式
     NSArray *arr2 = @[@"aaa",@"bbbbb"];
     //工厂方法创建
@@ -73,7 +81,7 @@ void arrTest(){
     }
 }
 
-void arrTestNew(){
+- (void)arrTestNew{
     // 字面量创建二维数组并访问
     NSArray *arr2 = @[@[@11, @12, @13], @[@21, @22, @23], @[@31, @32, @33]];
     
@@ -85,7 +93,7 @@ void arrTestNew(){
 
 }
 
-void mutableArr(){
+- (void)mutableArr{
     //创建，当然还有其他方式
     NSMutableArray *mutableArr = [NSMutableArray arrayWithObjects:@"one",@"two",@"three", nil];
     //添加
@@ -134,9 +142,11 @@ void mutableArr(){
  NSDictionary
  主要特点是不可变，如果集合初始化完成，将内容无法修改，无序。
  */
-void dictionaryTest(){
+- (void)dictionaryTest{
     //标准创建
     NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"cat",@"name1",@"dog",@"name2", nil];
+    NSLog(@"dict = %@", dict);
+    
     //字面量创建
     NSDictionary *dict1 = @{@"name1":@"cat",@"name2":@"dog"};
     //第一种遍历
@@ -168,5 +178,130 @@ void dictionaryTest(){
     NSDictionary *dict7 = [NSDictionary dictionaryWithContentsOfFile:path];
 
     NSLog(@"name = %@,count = %li, dict7 = %@",name,count,dict7);
+}
+
+- (void)MutableDictionaryTest{
+    //创建
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    //添加
+    [dict setObject:@"dog" forKey:@"name"];
+    [dict setValue:@"18" forKey:@"age"];
+    //会将传入字典中所有的键值对取出来添加到dict中
+    [dict setValuesForKeysWithDictionary:@{@"name1":@"dog"}];
+    //取元素
+    [dict objectForKey:@"name"];
+    id name = dict[@"name"];
+    NSLog(@"%@",name);
+    //删除
+    [dict removeAllObjects];
+    [dict removeObjectForKey:@"name"];
+    [dict removeObjectsForKeys:@[@"name", @"age"]];
+    //更新，如果利用setObject方法给已经存在的key赋值，新值会覆盖旧值
+    [dict setObject:@"20" forKey:@"age"];
+    dict[@"age"] = @"30";
+
+}
+
+/**
+ 无序，不可重复
+ */
+- (void)NSSetTest{
+    // 不可变set
+    // 实例化
+    NSSet *set001 = [[NSSet alloc] initWithObjects:@"1", @"2", @"3",  @"4", nil];
+    NSLog(@"set001 = %@", set001);
+    
+    NSSet *set002 = [NSSet setWithArray:@[@"1", @"3", @"7"]];
+    
+    // 比较
+    // 1 判断两个set是否相等
+    BOOL isEqual = [set001 isEqualToSet:set002];
+    if (isEqual)
+    {
+        NSLog(@"set001 等于 set002");
+    }
+    else
+    {
+        NSLog(@"set001 不等于 set002");
+    }
+     
+    // 2 判断 setA 是否是 setB 的子集
+    BOOL isSub = [set002 isSubsetOfSet:set001];
+    if (isSub)
+    {
+        NSLog(@"set002 是 set001 的子集");
+    }
+    else
+    {
+        NSLog(@"set002 不是 set001 的子集");
+    }
+     
+    // 3 判断两个set是否有交集
+    BOOL isIntersets = [set002 intersectsSet:set001];
+    if (isIntersets)
+    {
+        NSLog(@"set002 与 set001 有交集");
+    }
+    else
+    {
+        NSLog(@"set002 与 set001 无交集");
+    }
+     
+    // 4 是否包含某个对象
+    BOOL isContains = [set002 containsObject:@"8"];
+    if (isContains)
+    {
+        NSLog(@"set002 包含 8");
+    }
+    else
+    {
+        NSLog(@"set002 不包含 8");
+    }
+}
+
+- (void)MutableSetTest{
+    NSSet *set001 = [[NSSet alloc] initWithObjects:@"1", @"2", @"3",  @"4", nil];
+    NSLog(@"set001 = %@", set001);
+    
+    NSSet *set002 = [NSSet setWithArray:@[@"1", @"3", @"7"]];
+    
+    // 可变的set
+    NSMutableSet *set003 = [NSMutableSet setWithObjects:@"01", @"03", @"05", @"07", nil];
+    NSLog(@"set003 = %@", set003);
+    
+    // 添加元素
+    // 方法1 添加单个元素
+    [set003 addObject:@"000"];
+    NSLog(@"set003 = %@", set003);
+     
+    // 方法2 从指定数组中添加多个元素
+    NSArray *array003 = @[@"111", @"222"];
+    [set003 addObjectsFromArray:array003];
+    NSLog(@"set003 = %@", set003);
+     
+    // 方法3 从指定set中添加多个元素
+    [set003 intersectsSet:set002];
+    NSLog(@"set003 = %@", set003);
+    
+    // 删除元素
+    // 1 删除批定指定
+    [set003 removeObject:@"111"];
+    NSLog(@"set003 = %@", set003);
+     
+    // 2 删除所有元素
+    [set003 removeAllObjects];
+    NSLog(@"set003 = %@", set003);
+    
+    // 重新初始化set值
+    [set003 setSet:set002];
+    NSLog(@"set003 = %@", set003);
+    
+    // 去掉相同的元素，即set003 去掉与 set001 中相同的元素，保留不同的元素
+    [set003 minusSet:set001];
+    NSLog(@"set003 = %@", set003);
+    
+    // 并集，即两个集合组成一个集合
+    [set003 unionSet:set001];
+    NSLog(@"set003 = %@", set003);
 }
 @end

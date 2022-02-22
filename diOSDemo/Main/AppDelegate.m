@@ -17,7 +17,7 @@
 #import "ImageViewController.h"
 #import "AudioViewController.h"
 #import "VideoViewController.h"
-#import "Type_Study.h"
+#import "Grammer_Test.h"
 @interface AppDelegate ()
 
 @end
@@ -51,7 +51,8 @@
 }
 
 void typeStudy () {
-    typeTest();
+    Grammer_Test *g = [[Grammer_Test alloc] init];
+    [g grammerTest];
 }
 
 
