@@ -12,7 +12,7 @@
 @implementation Class_Study
 
 - (NSString *) getName{
-    return self.peopleName;
+    return _peopleName;
 }
 
 /**
@@ -26,7 +26,7 @@
     self = [super init];
     if (self) {
         //字符串前加@是为了区分c语言的字符串
-        self.peopleName = @"dragonh";
+        [self setPeopleName:@"dragonh"];
     }
     
     return self;
