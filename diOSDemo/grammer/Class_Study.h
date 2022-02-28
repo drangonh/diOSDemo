@@ -68,6 +68,8 @@
  - (id)performSelector:(SEL)aSelector withObject:(id)object1 withObject:(id)object2;
  参考链接：https://blog.csdn.net/kyl282889543/article/details/93864984
  
+ 封装
+ 把属性、变量和方法封装在一个类中
  
  继承
  同Java一样只能单继承，只允许最多有一个直接父类。例如：定义一个父类Computer和子类MacBook。注意方法重写类似Java，子类要重写父类方法不需要重新声明重写方法，在实现部分直接重写目标方法即可。如果需要子类调用父类的方法，可以通过super关键字调用。

@@ -45,6 +45,7 @@
 		04533E3C27C3390300726307 /* Class_Study.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class_Study.m; sourceTree = "<group>"; };
 		04533E3E27C4822E00726307 /* Grammer_Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Grammer_Test.h; sourceTree = "<group>"; };
 		04533E3F27C4822E00726307 /* Grammer_Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Grammer_Test.m; sourceTree = "<group>"; };
+		04533E4127CC6F8A00726307 /* 文件导入.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "文件导入.md"; sourceTree = "<group>"; };
 		752274C422F1973C00AE6870 /* diOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		752274C722F1973C00AE6870 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		752274C822F1973C00AE6870 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 				04533E3C27C3390300726307 /* Class_Study.m */,
 				04533E3E27C4822E00726307 /* Grammer_Test.h */,
 				04533E3F27C4822E00726307 /* Grammer_Test.m */,
+				04533E4127CC6F8A00726307 /* 文件导入.md */,
 			);
 			path = Grammer;
 			sourceTree = "<group>";
